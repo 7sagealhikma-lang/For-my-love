@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#260817">
+<title>For Kukushaye — From My Heart</title>
+<style>
+:root{--rose:#ff668f;--cream:#fff1e8;--gold:#ffd8a6;--wine:#260817}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--cream);font-family:Georgia,'Times New Roman',serif;background:#190713;min-height:100vh;overflow-x:hidden}
+.background{position:fixed;inset:0;z-index:-3;background:radial-gradient(ellipse at 20% 20%,rgba(255,92,140,.38),transparent 35%),radial-gradient(ellipse at 80% 70%,rgba(151,28,79,.48),transparent 38%),linear-gradient(145deg,#160611,#421027 50%,#170611)}
+.background:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,2,8,.25),rgba(12,2,8,.78));}
+#photoLayer{position:absolute;inset:0;background-position:center;background-size:cover;opacity:.42;display:none}
+#petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.petal{position:absolute;top:-10vh;animation:fall linear infinite;opacity:.75}
+@keyframes fall{to{transform:translate3d(8vw,115vh,0) rotate(620deg)}}
+.wrap{width:min(900px,92%);margin:auto;padding:28px 0 70px}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:34px 10px}
+.eyebrow{letter-spacing:.28em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--gold)}
+h1{font-size:clamp(42px,10vw,82px);line-height:1.02;margin:20px 0;color:#fff3f1;text-shadow:0 0 30px #ff6b9b80;font-weight:normal}
+.subtitle{font-size:clamp(17px,4vw,22px);line-height:1.7;max-width:620px;color:#f6d9df}
+.heart{font-size:44px;animation:pulse 1.7s infinite;filter:drop-shadow(0 0 15px #ff4b85)}
+@keyframes pulse{50%{transform:scale(1.18)}}
+button,.upload-label{border:1px solid #ffb1c8;background:linear-gradient(135deg,#d93670,#8c1c4c);color:white;padding:14px 22px;border-radius:999px;font-size:15px;cursor:pointer;box-shadow:0 8px 28px #0004;transition:transform .2s,filter .2s;font-family:Arial,sans-serif}
+button:hover,.upload-label:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px}
+.secondary{background:#ffffff0d;border-color:#ff9dbb}
+.card{background:linear-gradient(135deg,#ffffff13,#ffffff08);border:1px solid #ffb1c82e;border-radius:26px;padding:clamp(22px,5vw,46px);margin:24px 0;box-shadow:0 20px 60px #0002;backdrop-filter:blur(8px)}
+h2{font-weight:normal;color:#ffd3df;font-size:clamp(28px,6vw,42px);margin:0 0 22px;text-align:center}
+.letter p{font-size:18px;line-height:1.95;color:#fff0f0;margin:0 0 19px}
+.signature{text-align:right;color:var(--gold);font-style:italic;font-size:21px;margin-top:26px}
+.button-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.message{display:none;margin-top:20px;padding:20px;border-radius:18px;background:#210a17a8;border:1px solid #ffb1c82e;font-size:18px;line-height:1.85;color:#fff1f2}
+.message.show{display:block;animation:appear .45s ease}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.note{font:13px/1.7 Arial,sans-serif;color:#e8c5d1;text-align:center}
+.upload-label{display:inline-block}
+input[type=file]{display:none}
+footer{text-align:center;padding:30px 0;color:#d7a8b9;font-size:13px}
+@media(max-width:520px){.hero{min-height:80vh}.letter p{font-size:17px}.card{border-radius:20px}}
+</style>
+</head>
+<body>
+<div class="background"><div id="photoLayer"></div></div>
+<div id="petals"></div>
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow">A little world made from my heart</div>
+<div class="heart">♥</div>
+<h1>For My<br>Kukushaye</h1>
+<p class="subtitle">Some feelings are too deep for an ordinary message. So I made this little place for the words my heart has been carrying.</p>
+<div class="actions">
+<button onclick="openLetter()">Open My Heart ♥</button>
+
+</div>
+
+</section>
+
+<section id="letter" class="card letter" hidden>
+<h2>A Letter From My Heart 💌</h2>
+<p>My dear Kukushaye,</p>
+<p>If I could place every feeling inside my heart into words, I would still struggle to explain how deeply a person can matter. Sometimes the most honest feelings are the hardest to say—not because they are small, but because they mean so much.</p>
+<p>You have a place in a chapter of my life that I cannot describe with just one sentence. When I think about you, I am reminded that love can make us feel brave and vulnerable at the same time. It can show us the beautiful parts of ourselves, and it can also reveal the places where we still need to grow.</p>
+<p>I do not want these words to feel like a demand, a burden, or a question you must answer. I simply want them to be honest. You deserve kindness, peace, and the freedom to follow what feels right for you. Whatever life brings, I hope you are treated gently and that your days hold reasons to smile.</p>
+<p>If I have ever been quiet when I should have spoken, or confused when I should have been clear, I am learning from that. I am learning that meaningful love is not only about longing; it is also about patience, respect, responsibility, and becoming someone who can offer care without trying to control the outcome.</p>
+<p>There are memories that make the heart soft, words that stay with us, and people who remind us to look more honestly at ourselves. For me, you have been part of that journey. I can appreciate what you have meant to me without pretending that I know what tomorrow will bring.</p>
+<p>So this is not a promise that life must unfold in one particular way. It is a quiet truth from me: I wish you happiness, safety, calm, and a love that makes you feel valued. I hope you never have to shrink your light to make anyone comfortable. I hope you are surrounded by people who see your worth and treat your heart with care.</p>
+<p>And if you remember anything from this letter, let it be this: you are a person, not an idea or a dream, and your own feelings and choices matter. I want to honour that. I can speak from my heart while still leaving space for yours.</p>
+<p>With sincerity, warmth, and a heart that is learning to love more wisely.</p>
+<div class="signature">With care, from my heart ♥</div>
+</section>
+
+<section class="card">
+<h2>Little Doors to My Heart 🌹</h2>
+<p class="subtitle" style="text-align:center;margin:0 auto 24px">Tap a button to open a message.</p>
+<div class="button-grid">
+<button onclick="showMessage('meaning')">What You Mean to Me 💗</button>
+<button onclick="showMessage('quiet')">The Words I Keep Quiet 🤍</button>
+<button onclick="showMessage('wish')">My Wish for You 🌙</button>
+<button onclick="showMessage('respect')">A Love With Respect 🕊️</button>
+<button onclick="showMessage('smile')">A Little Reminder ✨</button>
+</div>
+<div class="message" id="meaning">You have reminded me how powerful it is when someone touches our heart. I am grateful for what I have learned about myself through these feelings, and I hope good things find their way to you.</div>
+<div class="message" id="quiet">Sometimes silence holds words that are difficult to arrange. I am learning to express what I feel with honesty instead of fear, and to let my actions become as thoughtful as my words.</div>
+<div class="message" id="wish">May your heart find peace, your plans find a path, and your smile return even on difficult days. May you always feel free to choose the life that makes you genuinely happy.</div>
+<div class="message" id="respect">Real care leaves room for another person's truth. I can share my feelings without asking you to carry them, and I can wish you well while respecting your choices and your space.</div>
+<div class="message" id="smile">Whatever today looks like, I hope you remember that your life has value, your dreams deserve room to grow, and you deserve kindness—including from yourself.</div>
+</section>
+
+<section class="card" style="text-align:center">
+<h2>One Last Little Heart ❤️</h2>
+<p class="subtitle" style="margin:0 auto">Some feelings do not need a grand ending. Sometimes it is enough to offer them gently, with honesty and respect.</p>
+<div class="actions">
+<button onclick="sprinkleHearts()">Send a Little Love ✨</button>
+
+</div>
+
+</section>
+
+<footer>Made with tenderness ♥ One page, one heartfelt message.</footer>
+</main>
+<script>
+function openLetter(){const el=document.getElementById('letter');el.hidden=false;el.scrollIntoView({behavior:'smooth',block:'start'});}
+function showMessage(id){document.querySelectorAll('.message').forEach(el=>el.classList.remove('show'));document.getElementById(id).classList.add('show');}
+// BACKGROUND PHOTO: upload her picture beside this HTML file in your GitHub repository.
+ // Rename the image to kukushaye-background.jpg so it loads automatically.
+ const backgroundLayer = document.getElementById('photoLayer');
+ backgroundLayer.style.backgroundImage = 'url("love.jpg")';
+ backgroundLayer.style.display = 'block';
+const petals=document.getElementById('petals');for(let i=0;i<22;i++){const p=document.createElement('span');p.className='petal';p.textContent=['♥','♡','✿','♥'][i%4];p.style.left=Math.random()*100+'%';p.style.animationDuration=(9+Math.random()*12)+'s';p.style.animationDelay=(-Math.random()*18)+'s';p.style.fontSize=(12+Math.random()*18)+'px';p.style.color=['#ff9ab9','#ffd6a6','#ffffff'][i%3];petals.appendChild(p);}
+function sprinkleHearts(){for(let i=0;i<26;i++){const h=document.createElement('span');h.textContent='♥';h.style.position='fixed';h.style.left=(Math.random()*100)+'vw';h.style.bottom='-30px';h.style.zIndex='10';h.style.pointerEvents='none';h.style.color=['#ff7aa8','#ffd6a6','#fff0f4'][i%3];h.style.fontSize=(16+Math.random()*24)+'px';h.style.transition='transform 3s ease,opacity 3s ease';document.body.appendChild(h);requestAnimationFrame(()=>{h.style.transform='translateY(-105vh) rotate('+(Math.random()*240-120)+'deg)';h.style.opacity='0';});setTimeout(()=>h.remove(),3200);}}
+</script>
+</body>
+</html>
